@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{{ url_for('predict') }}" method="post">
+    <input type="text" name="adv1" placeholder="Advertisement channel 1:" required="required">
+    <input type="text" name="adv2" placeholder="Advertisement channel 2:" required="required">
+    <button type="submit">Predict</button>
+</form>
+
+<br/>
+<br/>
+{{ prediction_text }}
+</body>
+</html>
